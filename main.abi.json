@@ -1,0 +1,138 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"_open","type":"bytes"},
+				{"name":"_hash_private","type":"uint256"},
+				{"name":"_ballot_numbers","type":"uint256[]"},
+				{"name":"_time_limit","type":"uint64"},
+				{"name":"_m_vkey","type":"bytes"},
+				{"name":"_m_pkey","type":"bytes"},
+				{"name":"_available_choose","type":"bytes[]"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "finish_vote",
+			"inputs": [
+				{"name":"_private","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "vote",
+			"inputs": [
+				{"name":"proof","type":"bytes"},
+				{"name":"ballot_number","type":"uint256"},
+				{"name":"vote","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "m_vkey",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"m_vkey","type":"bytes"}
+			]
+		},
+		{
+			"name": "m_pkey",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"m_pkey","type":"bytes"}
+			]
+		},
+		{
+			"name": "hash_private",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"hash_private","type":"uint256"}
+			]
+		},
+		{
+			"name": "private_key",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"private_key","type":"bytes"}
+			]
+		},
+		{
+			"name": "open",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"open","type":"bytes"}
+			]
+		},
+		{
+			"name": "status",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"status","type":"bool"}
+			]
+		},
+		{
+			"name": "time_limit",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"time_limit","type":"uint64"}
+			]
+		},
+		{
+			"name": "ballot_numbers_state",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"ballot_numbers_state","type":"map(uint256,uint8)"}
+			]
+		},
+		{
+			"name": "votes",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"votes","type":"bytes[]"}
+			]
+		},
+		{
+			"name": "available_choose",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"available_choose","type":"bytes[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"m_vkey","type":"bytes"},
+		{"name":"m_pkey","type":"bytes"},
+		{"name":"hash_private","type":"uint256"},
+		{"name":"private_key","type":"bytes"},
+		{"name":"open","type":"bytes"},
+		{"name":"status","type":"bool"},
+		{"name":"time_limit","type":"uint64"},
+		{"name":"ballot_numbers_state","type":"map(uint256,uint8)"},
+		{"name":"votes","type":"bytes[]"},
+		{"name":"available_choose","type":"bytes[]"}
+	]
+}
